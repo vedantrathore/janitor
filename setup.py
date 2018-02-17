@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name='janitor_cleaner',
-	version='0.1',
+	version='0.2',
 	description='Clean your disk drives with ease',
 	url='http://github.com/vedantrathore/janitor',
 	author='Vedant Rathore',

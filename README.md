@@ -7,7 +7,9 @@ The Easiest way to clean and analyse your files!
 ### Installation
 
 * Install python and pip according to your system with the guide available [here](http://docs.python-guide.org/en/latest/starting/installation/)
-* ` pip install janitor-cleaner `
+* ` git clone https://github.com/vedantrathore/janitor && cd janitor`
+* ` pip install -r requirements.txt`
+* ` pip install -e .`
 
 ### Usage
 
