@@ -29,7 +29,7 @@ Commands:
 * add `--help` to check command arguments
 
 ### Todo
-[x] ~~ Add Travis support ~~
-[ ] Package and publish to pip
-[ ] Write more tests and increase coverage
-[ ] Add more features
+- [x] ~~Add Travis support~~
+- [ ] Package and publish to pip
+- [ ] Write more tests and increase coverage
+- [ ] Add more features
