@@ -10,7 +10,7 @@ The Easiest way to clean and analyse your files!
 ### Usage
 
 * open the directory of your choice in a terminal/command prompt
-* ```
+```
 Usage: janitor [OPTIONS] COMMAND [ARGS]...
 
   A simple command line tool to clean and analyse your file system
