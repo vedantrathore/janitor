@@ -1,6 +1,7 @@
 # Janitor
 
 [![Build Status](https://travis-ci.org/vedantrathore/janitor.svg?branch=master)](https://travis-ci.org/vedantrathore/janitor)
+[![Coverage Status](https://coveralls.io/repos/github/vedantrathore/janitor/badge.svg?branch=master)](https://coveralls.io/github/vedantrathore/janitor?branch=master)
 
 The Easiest way to clean and analyse your files!
 

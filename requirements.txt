@@ -4,3 +4,4 @@ click_spinner==0.1.7
 click==6.7
 setuptools==28.8.0
 hurry==1.0
+coveralls
