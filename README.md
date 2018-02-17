@@ -1,4 +1,4 @@
-## Janitor
+# Janitor
 
 [![Build Status](https://travis-ci.org/vedantrathore/janitor.svg?branch=master)](https://travis-ci.org/vedantrathore/janitor)
 
@@ -27,3 +27,9 @@ Commands:
   clean    Clean your unwanted files to a secure location of your choice
 ```
 * add `--help` to check command arguments
+
+### Todo
+[x] ~~ Add Travis support ~~
+[ ] Package and publish to pip
+[ ] Write more tests and increase coverage
+[ ] Add more features
