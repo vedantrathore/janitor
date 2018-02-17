@@ -32,6 +32,8 @@ class Janitor():
 	 		for file in file_list:
 	 			file = os.path.basename(file)
 	 			extension = file.split('.')[-1]
+	 			if extension.lower() == 'lnk':
+	 				continue
 	 			new_path = os.path.join(output_directory, extension.upper())
 	 			if not os.path.exists(new_path):
 	 				os.makedirs(new_path)

@@ -1,9 +1,11 @@
+import os
 import click
 import logging
 import click_spinner
 import click_log
 from janitor import Janitor
 from hurry.filesize import size
+
 
 logger = logging.getLogger(__name__)
 click_log.basic_config(logger)
@@ -22,7 +24,6 @@ def analyse(path, length, sort):
 	click.secho('Your top {0} files occupying the most disk space are: '.format(length), fg='white')
 	click.secho('Name'.ljust(30) + 'Size'.ljust(15) + 'Path'.ljust(40) + 'Extension'.ljust(10), fg='white', bold=True)
 	cleaner = Janitor(path)
-	logger.info('Analysing the files on your system.')
 	with click_spinner.spinner():
 		files = cleaner.analyse()
 	files = sorted(files, key=lambda k:k[sort], reverse=(True if sort == 'size' else False))
