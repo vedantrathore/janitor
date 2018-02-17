@@ -1,0 +1,6 @@
+click_log==0.2.1
+hurry.filesize==0.9
+click_spinner==0.1.7
+click==6.7
+setuptools==28.8.0
+hurry==1.0

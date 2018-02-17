@@ -12,6 +12,7 @@ click_log.basic_config(logger)
 
 @click.group()
 def main():
+	"""	A simple command line tool to clean and analyse your file system """
 	pass
 
 @main.command()
@@ -20,6 +21,7 @@ def main():
 @click.argument('path', type=click.Path(exists=True), default=".")
 @click_log.simple_verbosity_option(logger)
 def analyse(path, length, sort):
+	""" Analyse the directory """
 	click.clear()
 	click.secho('Your top {0} files occupying the most disk space are: '.format(length), fg='white')
 	click.secho('Name'.ljust(30) + 'Size'.ljust(15) + 'Path'.ljust(40) + 'Extension'.ljust(10), fg='white', bold=True)
@@ -45,6 +47,7 @@ def analyse(path, length, sort):
 @click.option('--out_dir','-od', type=click.Path(exists=True), default='~/Documents/Janitor', help="The path to directory where you want to save your cleaned files")
 @click.option('--in_dir','-id', type=click.Path(exists=True), default='.', help="The directory you wish to clean")
 def clean(out_dir, in_dir):
+	""" Clean your unwanted files to a secure location"""
 	files = [f for f in os.listdir(in_dir) if os.path.isfile(os.path.join(in_dir, f))]
 	click.secho('The following files will be moved from {0} to {1}: '.format(in_dir, out_dir),fg='white')
 	for file in files:
