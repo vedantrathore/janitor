@@ -13,6 +13,6 @@ setup(
 		'Click'
 	],
 	entry_points={
-		'console_scripts':['janitor=src.cli:hello']
+		'console_scripts':['janitor=src.cli:main']
 	}
 )
