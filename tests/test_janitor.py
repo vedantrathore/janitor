@@ -14,3 +14,6 @@ class TestJanitorMethods(unittest.TestCase):
 
 	def testSearchDirectory(self):
 		self.assertEqual(test_path, self.cleaner.directory, 'Incorect directory initialisation')
+
+if __name__ == '__main__':
+  unittest.main()
