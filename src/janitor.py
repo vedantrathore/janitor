@@ -3,12 +3,11 @@ from pprint import pprint
 
 class Janitor():
 
-	file_list = []
-
 	def __init__(self,search_directory):
 		self.directory = search_directory
-
+		
 	def analyse(self):
+		file_list = []
 		for root, dirs, files in os.walk(self.directory):
 			for file in files:
 				path_to_file = os.path.join(root, file)
@@ -21,10 +20,10 @@ class Janitor():
 						'size' : size,
 						'extension' : extension
 	 				}
-	 				self.file_list.append(file_metadata)
-	 			except Exception:
+	 				file_list.append(file_metadata)
+	 			except Exception as e:
 	 				pass # todo: find an elegant way to handle exceptions
- 		return self.file_list
+	 	return file_list
 
  	def clean(self,output_directory, file_list=None):
  		if file_list is None:
@@ -41,6 +40,8 @@ class Janitor():
 
 
 if __name__ == '__main__':
-	search_directory = '/Users/vedantrathore/Desktop/Important Stuff'
+	search_directory = '/Users/vedantrathore/innovacer/janitor/tests/data/a'
 	cleaner = Janitor(search_directory)
-	cleaner.clean('/Users/vedantrathore/Documents/Janitor')
+	fl = cleaner.analyse()
+	pprint(cleaner.file_list)
+	pprint(fl)
