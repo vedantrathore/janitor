@@ -1,5 +1,7 @@
 ## Janitor
 
+[![Build Status](https://travis-ci.org/vedantrathore/janitor.svg?branch=master)](https://travis-ci.org/vedantrathore/janitor)
+
 The Easiest way to clean and analyse your files!
 
 ### Installation
